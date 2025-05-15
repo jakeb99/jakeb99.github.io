@@ -5,7 +5,7 @@ const HeroHeader = () => {
       <section className="bg-gray-100 dark:bg-gray-900 py-16 px-[15%]">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
           {/* Profile Picture in Double Circle */}
-          <div className="relative w-60 h-60 aspect-square rounded-full border-4 border-teal-300 p-1">
+          <div className="relative w-60 h-60 aspect-square rounded-full border-4 border-teal-200 p-1">
             <img
               src={profilePic}
               alt="Jake-Bunting"

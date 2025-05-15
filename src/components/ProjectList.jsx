@@ -14,18 +14,21 @@ const ProjectList = () => {
           title="Undead Defense (Feb - April 2025)"
           subtitle="Unity"
           description="Top-down wave survival game made in Unity."
+          link={"/project/undead-defense"}
         />
         <ProjectCard
           gifSrc={spaceCowboyGif}
           title="Cosmic Cowboy (Sept 2024)"
           subtitle="Unity, Game Jam"
           description="A Sci-fi text based RPG where the player must deliver packages across the galaxy. Built in 2 days at Town One Game Jam at Black Bird Interactive."
+          link={"/project/cosmic-cowboy"}
         />
         <ProjectCard
           gifSrc={rbbGif}
           title="Robo Baby Ball (2023)"
           subtitle="Unreal Engine 5"
           description="A 3D puzzle platformer inspired by Super Monkey Ball built using Unreal Engine Blueprints. Created for a game design course at Western University"
+          link={"/project/robo-baby-ball"}
         />
       </div>
     </div>

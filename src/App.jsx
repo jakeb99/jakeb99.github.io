@@ -1,20 +1,23 @@
 import './App.css'
-import AboutMeSection from './components/AboutMeSection'
-import EducationSection from './components/EducationSection'
-import HeroHeader from './components/HeroHeader'
-import Navbar from './components/Navbar'
-import ProjectList from './components/ProjectList'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import ProjectDetails from './pages/ProjectDetails';
+import Navbar from './components/Navbar';
+
 
 function App() {
 
   return (
-    <>
+    <Router>
       <Navbar />
-      <HeroHeader />
-      <ProjectList />
-      <EducationSection />
-      <AboutMeSection />
-    </>
+      <main className="flex-grow bg-gray-900">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
+        </Routes>
+      </main>
+    </Router>
   )
 }
 
